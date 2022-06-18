@@ -9,3 +9,8 @@ class NewProfileForm(forms.ModelForm):
     class Meta:
         model = Profile
         fields=['profile_pic','bio']
+
+class NewBusinessForm(forms.ModelForm):
+    class Meta:
+        model = Business
+        fields=['name','description','email']
