@@ -55,7 +55,22 @@ class Business(models.Model):
     user=models.ForeignKey(User,on_delete=models.CASCADE)
     neighborhood=models.ForeignKey(Neighbourhood,on_delete=models.CASCADE)
     email=models.EmailField()
+    def create_business(self):
+        self.save()
 
+    def delete_business(self):
+        self.delete()
+
+    @classmethod
+    def find_business(cls,business_id):
+        business=cls.objects.filter(id=business_id)
+        return business
+    @classmethod
+    def update_business(cls,business_id):
+        business=cls.objects.filter(id=business_id)
+        business.name=Value
+        business.save()
+        return business
 class Post(models.Model):
         post=models.CharField(max_length=200)
         user=models.ForeignKey(User,on_delete=models.CASCADE)
