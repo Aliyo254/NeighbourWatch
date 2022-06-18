@@ -1,6 +1,7 @@
 from django.shortcuts import redirect, render
 from django.contrib.auth.decorators import login_required
 from .forms import NewNeighbourhoodForm
+from .models import Neighbourhood,Profile,Business,Post
 # Create your views here.
 
 @login_required(login_url='/accounts/login/')
@@ -22,3 +23,12 @@ def new_neighbourhood(request):
     else:
         form = NewNeighbourhoodForm()
     return render(request, 'new_neighbourhood.html', {"form": form})
+
+def  neighbourhood_details(request,neighbourhood_id):
+
+    businesses=Business.objects.filter(neighborhood=neighbourhood_id)
+    posts=Post.objects.filter(neighborhood=neighbourhood_id)
+    neighbourhood=Neighbourhood.objects.get(pk=neighbourhood_id)
+    return render(request,'details.html',{'neighbourhood':neighbourhood,'businesses':businesses,'posts':posts,})
+
+
