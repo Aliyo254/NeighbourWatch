@@ -8,3 +8,11 @@ class Neighbourhood(models.Model):
     population=models.IntegerField()
     admin=models.ForeignKey(User,on_delete=models.CASCADE)
 
+
+
+
+class Profile(models.Model):
+    profile_pic=models.ImageField(upload_to='profile_photos/')
+    bio=models.CharField(max_length=300)
+    user = models.ForeignKey(User,on_delete=models.CASCADE)
+    neighborhood=models.ForeignKey(Neighbourhood,on_delete=models.CASCADE)
