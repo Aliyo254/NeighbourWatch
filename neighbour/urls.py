@@ -5,6 +5,7 @@ from . import views
 
 urlpatterns=[
        url(r'^$',views.home,name='Home'),
+       url(r'^new_neighbourhood',views.new_neighbourhood,name='new_neighbourhood'),
 ]       
 
 if settings.DEBUG:
