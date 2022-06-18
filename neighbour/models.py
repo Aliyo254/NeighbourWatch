@@ -42,3 +42,9 @@ class Profile(models.Model):
     bio=models.CharField(max_length=300)
     user = models.ForeignKey(User,on_delete=models.CASCADE)
     neighborhood=models.ForeignKey(Neighbourhood,on_delete=models.CASCADE)
+
+    def create_profile(self):
+        self.save()
+
+    def delete_profile(self):
+        self.delete()
