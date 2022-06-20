@@ -80,9 +80,11 @@ WSGI_APPLICATION = 'neighbourhood.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'neighbour',
-        'USER': 'alinur',
-        'PASSWORD':'admin',
+        'NAME': 'db73kcnn0j8r17',
+        'USER': 'mpnjjicaelkaxq',
+        'PASSWORD':'8927c88ddac1776f3e30fcaeb4165c96324c1fb857a9ff95ba76685831ce05a2',
+        'PORT':'5432',
+        'HOST':'ec2-3-224-8-189.compute-1.amazonaws.com'
     }
 }
 
