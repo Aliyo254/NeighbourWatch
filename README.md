@@ -4,11 +4,11 @@
 
 >[Ludwig Murmi](https://github.com/lu-dwig)  
 
->[Ali Nur Ali ](https://github.com/)
+>[Alinur Ali ](https://github.com/Aliyo254)
 
 # Description  
 This is a neighborhood app where a user must signup first, be able to join a hood owned by the hood admin, and once you 
-join a hood, one can see businesses and posts in only that wood they belong to.
+join a hood, one can see businesses and posts in only that hood they belong to.
 
 
 ##  Live Link  
@@ -77,4 +77,4 @@ Open the application on your browser `127.0.0.1:8000`.
 * There are no known bugs currently but pull requests are allowed incase you spot a bug  
   
 ## Contact Information   
-If you have any question or contributions, please email me at [murimiludwig@gmail.com] ,[]
+If you have any question or contributions, please email me at [murimiludwig@gmail.com] ,[alinurali254@gmail.com]
